@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- This is the document type declaration or DTD, this tells the browser or any client what the document is all about-->
+
+<!-- 
+    NOTE: tags are what the words inside <> are called. 
+    They are essentially a representative of how that specific element is structured or displayed as.
+-->
+
+<html lang="en"> <!-- This is the parent HTML tag, anything inside this tag is the document rendered in the browser or client -->
+    <head> <!-- Anything inside this tag is essentially not displayed, mostly file inclusions or document modifiers and information. -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title> <!-- Title of the document -->
+
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            /**
+             * This is an inline CSS
+             */
+
+            #user-greeting{
+                color: #555;
+            }
+
+            #invisible{
+                display: none;
+            }
+        </style>
+    </head>
+    <body> <!-- Anything inside this tag is considered a content, these elements are displayed on the client. -->
+        <h1>Hello world</h1> <!-- h1 is a tag for heading, it essentially modifies the content to a HEADING 1 format-->
+        <h1 class='blue'>This is a blue colored text.</h1>
+        <div id="user-greeting">Welcome back, user</div>
+        <div id="invisible">I cannot be seen by naked eyes.</div>
+
+        <script>
+            /**
+             * This is an in-document javascript.
+             * This is normally placed at the bottom so that the content would be loaded and displayed first before any behavior.
+             */
+        </script>
+        <script src="./script.js"></script>
+    </body>
+</html>
